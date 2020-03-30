@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>The Trekking Zone</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="./resources/styles/styles.css" />
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="./node_modules/handlebars/dist/handlebars.min.js"></script>
+    <script src="./node_modules/sammy/lib/min/sammy-0.7.6.min.js"></script>
+    <script src="./node_modules/sammy/lib/min/plugins/sammy.handlebars-0.7.6.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-app.js"></script>
+  
+    <script defer src="https://www.gstatic.com/firebasejs/7.12.0/firebase-auth.js"></script>
+  
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyAkNq4mK2-Xi0GrEhAETp1T_WaulBCnf64",
+        authDomain: "js-exercise-f2d18.firebaseapp.com",
+        databaseURL: "https://js-exercise-f2d18.firebaseio.com",
+        projectId: "js-exercise-f2d18",
+        storageBucket: "js-exercise-f2d18.appspot.com",
+        messagingSenderId: "25528207399",
+        appId: "1:25528207399:web:e53b7fc91f612f872a2602",
+        measurementId: "G-R0RKJLQ3W3"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
+    <script type="module" src="scripts/app.js"></script>
+  </head>
+
+  <body>
+    <div id="infoBox" class="notification" disabled></div>
+    <div id="errorBox" class="notification" disabled></div>
+    <div id="main">
+
+    </div>
+  </body>
+</html>
